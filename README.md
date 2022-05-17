@@ -1,7 +1,7 @@
 # BEMAD
 A tool to predict whether a pulmonary nodule is benign or malignant according to blood cfDNA data.
 
-## compile the tool and prepare data
+## Compile the tool and prepare data
 
 compile the tool
 
@@ -22,7 +22,7 @@ Note:
 1) Each line in the .train/.test files (in the folder demo_data) stands for the data of a sample. Numbers (separated by comma) in each line stand for the reads count for a 30K windows in the reference.
 2) Each data file just include the data of more no then 10 samples, which is NOT enough to reproduce the results in the paper.
 
-## training
+## Training
 
 Search type-associated reads count patterns with a self-developed genetic algorithm
 
@@ -31,7 +31,7 @@ Search type-associated reads count patterns with a self-developed genetic algori
 ```
 The number 5 means using continuous 5 windows.
 
-## predicting
+## Predicting
 
 Use patterns to predict samples (both training set and testing set)
 
