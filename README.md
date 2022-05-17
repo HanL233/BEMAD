@@ -44,7 +44,7 @@ perl ./script/getScore.pl ./demo_data/data.txt.Benign.train ./demo_data/pond.txt
 perl ./script/getScore.pl ./demo_data/data.txt.Cancer.test ./demo_data/pond.txt 10 > ./demo_data/score.Cancer.test.txt
 perl ./script/getScore.pl ./demo_data/data.txt.Benign.test ./demo_data/pond.txt 10 > ./demo_data/score.Benign.test.txt
 ```
-Balance the scores obtained with benign-/maglinant related patterns.
+Balance the scores obtained with benign-/maglinant- related patterns.
 
 ```
 perl ./script/scale.pl ./demo_data/score.Benign.train.txt ./demo_data/score.Cancer.train.txt ./demo_data/score.Benign.train.-1.txt ./demo_data/score.Cancer.train.-1.txt ./demo_data/score.Benign.test.txt ./demo_data/score.Cancer.test.txt ./demo_data/score.Benign.test.-1.txt ./demo_data/score.Cancer.test.-1.txt 0 > scaled.score.txt
